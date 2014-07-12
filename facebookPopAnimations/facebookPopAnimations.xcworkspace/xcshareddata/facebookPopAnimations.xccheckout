@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C44BA365-3608-48AB-AC35-5276D87E8F72</string>
+	<key>IDESourceControlProjectName</key>
+	<string>facebookPopAnimations</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>325D25E9-C3C4-4B33-A6DB-432E67F75235</key>
+		<string>https://github.com/mo9is/FacebookPopSideViewAnimations.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>facebookPopAnimations/facebookPopAnimations.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>325D25E9-C3C4-4B33-A6DB-432E67F75235</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mo9is/FacebookPopSideViewAnimations.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>325D25E9-C3C4-4B33-A6DB-432E67F75235</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>325D25E9-C3C4-4B33-A6DB-432E67F75235</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FacebookPopSideViewAnimations</string>
+		</dict>
+	</array>
+</dict>
+</plist>

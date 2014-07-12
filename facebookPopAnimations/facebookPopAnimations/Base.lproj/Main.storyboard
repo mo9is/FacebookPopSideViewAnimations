@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4qb-mV-qhI">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Side View Controller - Side View-->
+        <scene sceneID="C7P-4V-5uJ">
+            <objects>
+                <viewController storyboardIdentifier="SideViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bm0-lb-NV4" customClass="SideViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a5J-Js-1vJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="qLk-oD-2Sh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t3D-p7-QNz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Side View" id="yqc-MJ-qd6">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="HM1-wz-pje">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="Bm0-lb-NV4" id="XCY-81-6xI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRl-kL-OtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129" y="712"/>
+        </scene>
+        <!--View Controller - First View-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzV-gF-qAT">
+                                <rect key="frame" x="116" y="241" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Present View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentViewButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xqD-0S-J9I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="First View" id="Iyq-0F-khL">
+                        <barButtonItem key="leftBarButtonItem" title="Left" id="ysj-fg-x3z">
+                            <connections>
+                                <action selector="LeftButtonPressed:" destination="vXZ-lx-hvc" id="Q8w-9n-6nj"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Right" id="nvH-1F-7wu">
+                            <connections>
+                                <action selector="rightButtonPressed:" destination="vXZ-lx-hvc" id="JlO-9O-utr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="leftBarButton" destination="ysj-fg-x3z" id="dpx-qx-5yJ"/>
+                        <outlet property="presentButton" destination="dzV-gF-qAT" id="09v-Q8-Hly"/>
+                        <outlet property="rightBarButton" destination="nvH-1F-7wu" id="a1g-Dt-qFB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603" y="32"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8XD-rc-AHL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4qb-mV-qhI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Xn-eP-agr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="byU-er-Tor"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hg4-Mf-Q0x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="32"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
